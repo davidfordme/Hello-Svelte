@@ -5,6 +5,6 @@
   }
 </script>
 
-<button on:click={increment}>
-  count is {count}
+<button on:click={ increment }>
+  This button has been clicked {count} time{ (count !== 1)? 's' : ''}
 </button>
