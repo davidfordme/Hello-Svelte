@@ -1,5 +1,6 @@
 <script>
   export let count = 0
+  export let shouldShowDouble = false
   const increment = () => {
     count += 1
   }
@@ -15,7 +16,10 @@
   This button has been clicked {count} time{ (count !== 1)? 's' : ''}
 </button>
 
-<p>(...which doubled is {doubled})</p>
+<!-- https://svelte.dev/tutorial/if-blocks -->
+{#if shouldShowDouble }
+  <p>(...which doubled is {doubled})</p>
+{/if}
 
 <style>
   p {

@@ -3,7 +3,8 @@
   import Counter from './lib/Counter.svelte'
 
   const params = {
-    count : 0
+    count : 0,
+    shouldShowDouble : false
   }
 </script>
 
