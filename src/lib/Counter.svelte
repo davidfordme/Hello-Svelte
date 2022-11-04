@@ -5,6 +5,8 @@
   }
 
   $: doubled = count * 2;
+
+  $: console.log('the count is ' + count);
 </script>
 
 <button on:click={ increment }>
