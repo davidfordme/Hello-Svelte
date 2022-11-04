@@ -4,9 +4,11 @@
     count += 1
   }
 
+  // '$:' is a variable or method that will update when a variable defined inside updates
   $: doubled = count * 2;
-
-  $: console.log('the count is ' + count);
+  $: {
+    console.log('the count is ' + count);
+  }
 </script>
 
 <button on:click={ increment }>
