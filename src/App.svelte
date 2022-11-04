@@ -1,6 +1,10 @@
 <script>
   import svelteLogo from './assets/svelte.svg'
   import Counter from './lib/Counter.svelte'
+
+  const params = {
+    count : 0
+  }
 </script>
 
 <main>
@@ -15,7 +19,7 @@
   <h1>Vite + Svelte</h1>
 
   <div class="card">
-    <Counter count={0} />
+    <Counter {...params} />
   </div>
 
   <p>
