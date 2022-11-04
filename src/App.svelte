@@ -19,6 +19,7 @@
   <h1>Vite + Svelte</h1>
 
   <div class="card">
+    <!-- https://svelte.dev/tutorial/spread-props -->
     <Counter {...params} />
   </div>
 
